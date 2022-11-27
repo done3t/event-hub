@@ -4,14 +4,14 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['standard-with-typescript', 'prettier'],
+  extends: ['standard-with-typescript', 'plugin:jest/recommended', 'prettier'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.eslint.json'
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint', 'jest', 'prettier'],
   rules: {
     'prettier/prettier': 'error'
   }
