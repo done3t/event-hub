@@ -9,7 +9,8 @@
     "dev": "tsc --watch",
     "build": "npm run clean && tsc",
     "lint": "eslint src --ext .js,.ts --cache --fix",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "prepare": "husky install"
   },
   "publishConfig": {
     "access": "public"
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/done3t/event-hub#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "cpr": "^3.0.1",
     "eslint": "^8.28.0",
@@ -35,6 +38,7 @@
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.2",
     "make-dir-cli": "^3.0.0",
     "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
